@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="scenePane" accessibleRole="COMBO_BOX" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="773.0" prefWidth="1379.0" styleClass="HeroCreator" stylesheets="@../css/Main.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HeroController">
+    <children>
+        <Button fx:id="GoBack" alignment="CENTER" contentDisplay="RIGHT" layoutX="1240.0" layoutY="701.0" mnemonicParsing="false" onAction="#CF" prefHeight="42.0" prefWidth="125.0" text="Go Back" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+            <styleClass>
+                <String fx:value="Button" />
+                <String fx:value="Button-Reg-log" />
+            </styleClass></Button>
+        <Button fx:id="HSButton" alignment="CENTER" layoutX="76.0" layoutY="564.0" mnemonicParsing="false" onAction="#HS" prefHeight="108.0" prefWidth="208.0" text="See all infomation&#10;about &#10;Specific Hero" textAlignment="CENTER" textFill="#fffefe">
+            <font>
+                <Font size="15.0" />
+            </font>
+            <styleClass>
+                <String fx:value="Button" />
+                <String fx:value="Button-Reg-log" />
+            </styleClass></Button>
+        <ImageView fitHeight="32.0" fitWidth="50.0" layoutX="1177.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Icon/google-contacts.png" />
+            </image>
+        </ImageView>
+        <Button alignment="CENTER" layoutX="924.0" layoutY="564.0" mnemonicParsing="false" onAction="#CreateHero" prefHeight="59.0" prefWidth="200.0" text="Create Hero" textFill="#fffefe">
+            <font>
+                <Font size="15.0" />
+            </font>
+            <styleClass>
+                <String fx:value="Button" />
+                <String fx:value="Button-Reg-log" />
+            </styleClass>
+        </Button>
+        <Button alignment="CENTER" layoutX="349.0" layoutY="564.0" mnemonicParsing="false" onAction="#removeHero" prefHeight="59.0" prefWidth="125.0" text="Detete" textFill="#fffefe">
+            <font>
+                <Font size="15.0" />
+            </font>
+            <styleClass>
+                <String fx:value="Button" />
+                <String fx:value="Button-Reg-log" />
+            </styleClass>
+        </Button>
+      <TextField fx:id="RaceP" layoutX="798.0" layoutY="400.0" prefHeight="32.0" prefWidth="200.0" />
+      <TextField fx:id="HeroName" layoutX="798.0" layoutY="226.0" prefHeight="32.0" prefWidth="200.0" />
+      <TextField fx:id="AgeHero" layoutX="798.0" layoutY="312.0" prefHeight="32.0" prefWidth="200.0" />
+      <Text fx:id="userN" fill="WHITE" layoutX="1225.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="112.0">
+         <font>
+            <Font name="Calibri Bold" size="22.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="58.0" fitWidth="502.0" layoutX="166.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/HH.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="59.0" fitWidth="389.0" layoutX="712.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/HC.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="67.0" fitWidth="144.0" layoutX="626.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/Name.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="67.0" fitWidth="144.0" layoutX="618.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/AgeH.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="67.0" fitWidth="144.0" layoutX="626.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/race.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="82.0" fitWidth="242.0" layoutX="1072.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/P.png" />
+         </image>
+      </ImageView>
+      <CheckBox fx:id="MageX" layoutX="1085.0" layoutY="209.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="216.0" text="Mage" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="WarriorX" layoutX="1085.0" layoutY="274.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="216.0" text="Warrior" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="ArcherX" layoutX="1085.0" layoutY="334.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="216.0" text="Archer" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="HobbitX" layoutX="1085.0" layoutY="393.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="216.0" text="Hobbit" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </CheckBox>
+      <Text fx:id="userN1" fill="WHITE" layoutX="589.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fellowship Name:" wrappingWidth="173.0">
+         <font>
+            <Font name="Calibri Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fx:id="FN" fill="WHITE" layoutX="762.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="173.0">
+         <font>
+            <Font name="Calibri Bold" size="22.0" />
+         </font>
+      </Text>
+      <VBox layoutX="76.0" layoutY="119.0" prefHeight="403.0" prefWidth="504.0" styleClass="Border-Fell">
+         <children>
+            <GridPane prefHeight="401.0" prefWidth="502.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="502.0" minWidth="10.0" prefWidth="502.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="246.0" minWidth="0.0" prefWidth="0.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints maxHeight="240.0" minHeight="0.0" prefHeight="16.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="392.0" minHeight="10.0" prefHeight="344.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TableView fx:id="TableH" prefHeight="213.0" prefWidth="502.0" GridPane.rowIndex="2">
+                     <columns>
+                        <TableColumn fx:id="NumberHColumn" prefWidth="75.0" text="number" />
+                        <TableColumn fx:id="HeroNameColumn" prefWidth="113.0" text="Hero name" />
+                        <TableColumn fx:id="AgeHColumn" prefWidth="75.0" text="Age" />
+                        <TableColumn fx:id="RaceHColumn" prefWidth="125.0" text="Race" />
+                        <TableColumn fx:id="ProfessionColumn" prefWidth="113.0" text="Profession" />
+                     </columns>
+                  </TableView>
+                  <HBox prefHeight="8.0" prefWidth="502.0" GridPane.rowIndex="1">
+                     <children>
+                        <TextField fx:id="searchH" />
+                        <Button mnemonicParsing="false" onAction="#FiltrHero" prefHeight="25.0" prefWidth="86.0" text="Filtr Hero" />
+                     </children>
+                  </HBox>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+      <ComboBox fx:id="SL" layoutX="1085.0" layoutY="466.0" prefWidth="150.0" />
+      <Button fx:id="viewFightButton" alignment="CENTER" layoutX="548.0" layoutY="694.0" mnemonicParsing="false" onAction="#viewFight" prefHeight="58.0" prefWidth="242.0" text="CHOSE HERO AND FIGHT !" textAlignment="CENTER" textFill="#fffefe">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <styleClass>
+            <String fx:value="Button" />
+            <String fx:value="Button-Reg-log" />
+         </styleClass>
+      </Button>
+      <Label fx:id="LabelFight" layoutX="548.0" layoutY="564.0" prefHeight="108.0" prefWidth="252.0" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Text fx:id="userN11" fill="WHITE" layoutX="811.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Steath level only fo Hobbit :" wrappingWidth="261.0">
+         <font>
+            <Font name="Calibri Bold" size="22.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>

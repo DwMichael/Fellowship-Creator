@@ -1,0 +1,94 @@
+.root{
+    -fx-background-image:url("Images/main.jpg");
+    -fx-background-position: center;
+    -fx-background-size: cover;
+
+
+}
+.Fellowshipcreator{
+   -fx-background-image:url("Images/TEST3.jpg");
+    -fx-background-position: center;
+     -fx-background-repeat: no-repeat;
+      -fx-background-size: 100% 100%;
+}
+.HeroCreator{
+   -fx-background-image:url("Images/Felll.jpg");
+    -fx-background-position: center;
+     -fx-background-repeat: no-repeat;
+      -fx-background-size: 100% 100%;
+}
+.Border-Fell{
+    -fx-border-color:black;
+    -fx-border-width: 1;
+    -fx-border-style: solid;
+    -fx-background-image:url("Images/t.jpg");
+
+    }
+    .Border-Fell2{
+        -fx-border-color:black;
+        -fx-border-width: 1;
+        -fx-border-style: solid;
+        -fx-background-image:url("Images/F13.jpg");
+         -fx-background-size: 100% 100%;
+
+
+
+        }
+.logpagec{
+    -fx-background-image:url("Images/LogIn.png");
+    -fx-background-position: center;
+    -fx-background-size: cover;
+}
+.registerpagec{
+    -fx-background-image:url("Images/register.png");
+    -fx-background-position: center;
+    -fx-background-size: cover;
+}
+
+
+.Button-Reg-log
+{
+    -fx-font-size:15px;
+    -fx-color: #494949;
+    -fx-text-transform: uppercase;
+    -fx-text-decoration: none;
+    -fx-background: #ffffff;
+    -fx-padding: 20px;
+    -fx-display: inline-block;
+    -fx-transition: all 0.4s ease 0s;
+    -fx-font-family:Rockwell;
+}
+
+.Button-men
+{
+    -fx-font-size:23px;
+    -fx-color: #494949;
+    -fx-text-transform: uppercase;
+    -fx-text-decoration: none;
+    -fx-background: #ffffff;
+    -fx-padding: 20px;
+    -fx-display: inline-block;
+    -fx-transition: all 0.4s ease 0s;
+    -fx-font-family:Rockwell;
+}
+
+.Button-Reg-log:hover {
+    -fx-color: Black ;
+	-fx-background: #f6b93b;
+	-fx-border-color: #ffff ;
+	-fx-transition: all 0.4s ease 0s;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-font-family:Rockwell;
+    -fx-font-size:15px;
+}
+.Button-men:hover {
+    -fx-color: Black ;
+	-fx-background: #f6b93b;
+	-fx-border-color: #ffff ;
+	-fx-transition: all 0.4s ease 0s;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-font-family:Rockwell;
+    -fx-font-size:23px;
+}

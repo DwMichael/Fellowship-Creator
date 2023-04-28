@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scenePane" accessibleRole="COMBO_BOX" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="773.0" prefWidth="1379.0" styleClass="logpagec" stylesheets="@../css/Main.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LogInController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="332.0" layoutY="48.0" prefHeight="189.0" prefWidth="798.0" text="Login Page" textAlignment="CENTER" textFill="#fffbfb" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Rockwell" size="140.0" />
+         </font>
+      </Label>
+      <Button fx:id="LoginButton" alignment="CENTER" contentDisplay="RIGHT" layoutX="1068.0" layoutY="654.0" mnemonicParsing="false" onAction="#LoginButton" prefHeight="42.0" prefWidth="125.0" text="Login" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <styleClass>
+            <String fx:value="Button" />
+            <String fx:value="Button-Reg-log" />
+         </styleClass></Button>
+      <Button fx:id="MenuButton" alignment="CENTER" layoutX="269.0" layoutY="653.0" mnemonicParsing="false" onAction="#GoToMenu" prefHeight="59.0" prefWidth="125.0" text="Menu" textFill="#fffefe">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <styleClass>
+            <String fx:value="Button" />
+            <String fx:value="Button-Reg-log" />
+         </styleClass></Button>
+      <PasswordField fx:id="Passwd" layoutX="600.0" layoutY="453.0" prefHeight="32.0" prefWidth="323.0" promptText="Password">
+         <font>
+            <Font size="15.0" />
+         </font></PasswordField>
+      <TextField fx:id="TbLog" layoutX="600.0" layoutY="372.0" prefHeight="32.0" prefWidth="323.0" promptText="LoginName">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <ImageView fitHeight="57.0" fitWidth="57.0" layoutX="515.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/google-contacts.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="59.0" fitWidth="57.0" layoutX="515.0" layoutY="441.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/unlock2.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="RegisterButton" alignment="CENTER" layoutX="669.0" layoutY="653.0" mnemonicParsing="false" onAction="#GoToRegisterPage" prefHeight="59.0" prefWidth="125.0" text="Register" textFill="#fffefe">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <styleClass>
+            <String fx:value="Button" />
+            <String fx:value="Button-Reg-log" />
+         </styleClass>
+      </Button>
+   </children>
+</AnchorPane>
