@@ -210,7 +210,7 @@ public class FellowshipController implements Initializable {
         }
         return DB;
     }
-    public void FiltrOb() {
+    public void FilterOb() {
         ArrayList<DbObject> DB = new ArrayList<>();
         for(DbObject DataBases : DataBase) {
             String deviceToLower = DataBases.getTextValue().toLowerCase();
@@ -220,7 +220,7 @@ public class FellowshipController implements Initializable {
             TableALL.getItems().setAll(DB);
         }
     }
-    public void FiltrFell() {
+    public void FilterFell() {
         ArrayList<DbObject> F = new ArrayList<>();
         for(DbObject Do : DataBase ){
             if(Do instanceof Fellowship ){

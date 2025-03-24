@@ -49,7 +49,7 @@
                   <HBox prefHeight="8.0" prefWidth="502.0">
                      <children>
                         <TextField fx:id="searchF" />
-                        <Button mnemonicParsing="false" onAction="#FiltrFell" prefHeight="25.0" prefWidth="114.0" text="Filtr Fellowship" />
+                        <Button mnemonicParsing="false" onAction="#FilterFell" prefHeight="25.0" prefWidth="114.0" text="Filtr Fellowship" />
                      </children></HBox>
                </children>
             </GridPane>
@@ -137,7 +137,7 @@
                   <HBox prefHeight="8.0" prefWidth="502.0">
                      <children>
                         <TextField fx:id="searchedWord" />
-                        <Button mnemonicParsing="false" onAction="#FiltrOb" prefHeight="25.0" prefWidth="86.0" text="Filtr Objects" />
+                        <Button mnemonicParsing="false" onAction="#FilterOb" prefHeight="25.0" prefWidth="86.0" text="Filtr Objects" />
                      </children>
                   </HBox>
                </children>
